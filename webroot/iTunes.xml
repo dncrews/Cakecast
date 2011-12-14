@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>    
+    <rss xmlns:itunes='http://www.itunes.com/dtds/podcast-1.0.dtd' version='2.0'>
+        <channel>
+
+        <title>Podcast Test</title>
+        <link>http://localhost/</link>
+        <copyright>Copyright 2010</copyright>
+        <itunes:subtitle>Subtitle</itunes:subtitle>
+        <itunes:author>Daniel Crews</itunes:author>
+        <itunes:summary>Summary</itunes:summary>
+        <description>Description</description>
+        <itunes:owner>
+            <itunes:name>Owner's Name</itunes:name>
+            <itunes:email>email@example.com</itunes:email>
+        </itunes:owner>
+        <itunes:image href='http://localhost/podcast/img/albumArt.gif' />
+        <itunes:category text="Sports &amp; Recreation" />
+        <itunes:explicit>No</itunes:explicit>
+        
+
+            <item>
+                <title>zxcvzxcv</title>
+                <itunes:author>Test Me</itunes:author>
+                <artist>Test Me</artist>
+                <itunes:subtitle>zxczxcvzxcv</itunes:subtitle>
+                <itunes:summary>zxcvzxcv</itunes:summary>
+                <enclosure url='http://localhost/podcast/archive/102009_4ce7e858.mp3' length='4219099' type='audio/mpeg' />
+                <guid>http://localhost/podcast/archive/102009_4ce7e858.mp3</guid>
+                <pubDate>2009-10-20 18:50:53</pubDate>
+                <itunes:duration>4:23</itunes:duration>
+                <itunes:keywords>zxcvzxcv</itunes:keywords>
+            </item>
+        
+
+            <item>
+                <title>qwerqwer</title>
+                <itunes:author>Test Me</itunes:author>
+                <artist>Test Me</artist>
+                <itunes:subtitle>qwerqwer</itunes:subtitle>
+                <itunes:summary>qwerqwer</itunes:summary>
+                <enclosure url='http://localhost/podcast/archive/102009_93f83ca5.mp3' length='4277896' type='audio/mpeg' />
+                <guid>http://localhost/podcast/archive/102009_93f83ca5.mp3</guid>
+                <pubDate>2009-10-20 18:50:26</pubDate>
+                <itunes:duration>4:27</itunes:duration>
+                <itunes:keywords>qwerqwer</itunes:keywords>
+            </item>
+        
+
+            <item>
+                <title>asdf123789</title>
+                <itunes:author>Test Me</itunes:author>
+                <artist>Test Me</artist>
+                <itunes:subtitle>asdf123789</itunes:subtitle>
+                <itunes:summary>asdf123789</itunes:summary>
+                <enclosure url='http://localhost/podcast/archive/102109_e6630102.mp3' length='5135248' type='audio/mpeg' />
+                <guid>http://localhost/podcast/archive/102109_e6630102.mp3</guid>
+                <pubDate>2009-10-21 08:27:57</pubDate>
+                <itunes:duration>5:21</itunes:duration>
+                <itunes:keywords>asdf123789</itunes:keywords>
+            </item>
+        
+
+            <item>
+                <title>Long Test</title>
+                <itunes:author>Test Me</itunes:author>
+                <artist>Test Me</artist>
+                <itunes:subtitle>Long test subtitle</itunes:subtitle>
+                <itunes:summary>sadfasdfklj</itunes:summary>
+                <enclosure url='http://localhost/podcast/archive/102009_6e79f7fc.mp3' length='4787470' type='audio/mpeg' />
+                <guid>http://localhost/podcast/archive/102009_6e79f7fc.mp3</guid>
+                <pubDate>2009-10-20 18:24:18</pubDate>
+                <itunes:duration>4:59</itunes:duration>
+                <itunes:keywords></itunes:keywords>
+            </item>
+        
+
+            <item>
+                <title>test</title>
+                <itunes:author>Test Me</itunes:author>
+                <artist>Test Me</artist>
+                <itunes:subtitle>test</itunes:subtitle>
+                <itunes:summary>test</itunes:summary>
+                <enclosure url='http://localhost/podcast/archive/102009_db2838a2.mp3' length='651318' type='audio/mpeg' />
+                <guid>http://localhost/podcast/archive/102009_db2838a2.mp3</guid>
+                <pubDate>2009-10-20 16:36:09</pubDate>
+                <itunes:duration>0:40</itunes:duration>
+                <itunes:keywords>test</itunes:keywords>
+            </item>
+        
+
+            <item>
+                <title>Here's my title</title>
+                <itunes:author>Test Me</itunes:author>
+                <artist>Test Me</artist>
+                <itunes:subtitle>Here's my subtitle</itunes:subtitle>
+                <itunes:summary>asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf asdfasdf </itunes:summary>
+                <enclosure url='http://localhost/podcast/archive/102009_0965f6ce.mp3' length='651318' type='audio/mpeg' />
+                <guid>http://localhost/podcast/archive/102009_0965f6ce.mp3</guid>
+                <pubDate>2009-10-20 17:20:33</pubDate>
+                <itunes:duration>0:40</itunes:duration>
+                <itunes:keywords>asdfasdf</itunes:keywords>
+            </item>
+        </channel>
+    </rss>

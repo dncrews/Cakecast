@@ -1,0 +1,6 @@
+This is the initial version of the Cakecast application. I built this a couple years back, when CakePHP 1.2 was the best version available. The files aren't found automatically, since this was originally set up on a webserver that I couldn't quite put things where I wanted them. The webroot/index.php will need to be set up to identify where the cake libs are, as well as the rest of the site, since I expect the webroot to be moved to the webroot and the rest to remain outside.
+
+This application is currently built to run on CakePHP 1.2; the version I used while building was 1.2.3.8166.
+
+Be sure to create a Security.salt in config/core.php and setup your database information in config/database.php
+If you don't have the schema, you can find it in config/sql/schema.sql

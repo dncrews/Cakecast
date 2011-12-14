@@ -1,0 +1,780 @@
+/* Colors */
+
+body {
+    background: #e6e6e6 url('../img/layout/bgBody.gif') repeat-x;
+}
+
+a {
+    color: #676767;
+}
+
+/* Layout */
+
+body {
+	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+	font-size:12px;
+	margin: 0;
+	color: #676767;
+}
+body.playerPage {
+    background: #E5581A;
+}
+    body.playerPage a {
+        display: block;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+    
+    #container {
+        width: 800px;
+        margin: 0 auto;
+        background: #fff;
+        text-align: left;
+    }
+        #header {
+            padding: 0;
+            position: relative;
+            height: 122px;
+            background: url('../img/layout/bgHeader.png') no-repeat top center
+        }
+            #siteTitle {
+                position: absolute;
+                left: 105px;
+                top: 14px;
+                font-size: 35px;
+                font-family: Comic Sans MS;
+            }
+
+/* Navigations */
+
+.navBar {
+    background: url(../img/layout/bgNavBar.png) repeat-x top;
+    position: absolute;
+    bottom: 0;
+    left: 13px;
+    width: 771px;
+    text-transform: lowercase;
+}
+    .navBar a {
+        color: #fff;
+    }
+    .navBar ul {
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+        height: 24px;
+        line-height: 24px;
+    }
+        .navBar li {
+            float: left;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+            .navBar li a {
+                display: block;
+                padding: 0 15px;
+                text-decoration: none;
+                background: url('../img/layout/bgNavBarLink.png') no-repeat right;
+            }
+                .navBar li a:hover {
+                    background: url('../img/layout/bgNavBarLinkHover.png') no-repeat right;
+                    padding: 0 16px 0 14px;
+                }
+            .navBar .menuLogoutLink {
+                float: right;
+                margin-right: 1px;
+            }
+                .navBar li.menuLogoutLink a {
+                    background-position: left top;
+                }
+                    .navBar li.menuLogoutLink a:hover {
+                        background: url('../img/layout/bgMenuLogoutLink.png') no-repeat left;
+                        padding: 0 16px 0 14px;
+                    }
+    #subNav {
+        background: #EEEEEE;
+        position: static;
+        margin-left: -19px;
+        padding: 6px 0;
+    }
+        #subNav ul {
+            margin: -6px 0;
+            padding: 0 23px;
+        }
+            #subNav a {
+                color: #767676;
+                background-color: transparent;
+                background-position: 1px 9px;
+                background-repeat: no-repeat;
+                background-image: none;
+            }
+                #subNav a:hover {
+                    background-position: left 9px;
+                }
+                #subNav li.menuBackLink a {
+                    background-image: url('../img/layout/bgMenuBackLink.png');
+                }
+                #subNav li.menuNewLink a {
+                    background-image: url('../img/layout/bgMenuNewLink.png');
+                }
+                #subNav li.menuDeleteLink a {
+                    background-image: url('../img/layout/bgMenuDeleteLink.png');
+                }
+                #subNav li.menuEditLink a {
+                    background-image: url('../img/layout/bgMenuEditLink.png');
+                }
+                #subNav li.menuCancelLink a {
+                    background-image: url('../img/layout/bgMenuCancelLink.png');
+                }
+                #subNav li.menuListLink a {
+                    background-image: url('../img/layout/bgMenuListLink.png');
+                    padding-left: 25px;
+                }
+                    #subNav li.menuListLink a:hover {
+                        padding-left: 24px;
+                    }
+
+                
+            
+
+/* Content */
+
+#content {
+    background: url('../img/layout/bgContent.png') repeat-y center;
+    padding: 0 32px;
+    position: relative;
+}
+
+/* Footer */
+
+#footer {
+    background: url('../img/layout/bgFooter.png') no-repeat top center;
+    height: 62px;
+}
+
+/******************/
+/* Page Specifics */
+/******************/
+
+/* Cast Index & Admin Index Pages */
+
+.casts.index {
+    background: url('../img/layout/bgCastsIndex.png') no-repeat top;
+    margin-top: 20px;
+    padding-top: 145px;
+    position: relative;
+}
+    .casts.index h2 {
+        color: #5D5D5D;
+        font-size: 120%;
+        font-weight: bold;
+        background: url('../img/layout/bgH2button.png') no-repeat 10px top;
+        height: 29px;
+        line-height: 29px;
+        text-transform: lowercase;
+        margin-bottom: 0;
+        padding-left: 38px;
+        border-bottom: 3px solid #E8E8E8;
+    }
+    #archiveLink {
+        border-top: 2px solid #E8E8E8; 
+    }
+        #archiveLink a {
+            background: url('../img/layout/bgArchiveLink.png') no-repeat 0 7px;
+            display: block;
+            padding: 6px 0 0 27px;
+            font-weight: bold;
+            text-transform: lowercase;
+            text-decoration: none;
+        }
+    .castList {
+        background: transparent;
+        border: 0;
+        margin: 10px 0 0;
+        color: #676767;
+        font-size: .9em;
+    }
+        .castList tr td {
+            border-right: 0;
+            text-align: left;
+            padding: 7px;
+        }
+        .castList .mediaTypeColumn {
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 45px;
+        }
+            .castList .audioBox {
+                background-image: url('../img/layout/bgAudioBox.png');
+            }
+            .castList .videoBox {
+                background-image: url('../img/layout/bgVideoBox.png');
+            }
+        .castList .castTitleColumn {
+            width: 165px;
+        }
+            .castList .castTitleColumn .castTitle {
+                font-size: 1.1em;
+                display: block;
+            }
+            .castList .castTitleColumn .castSubtitle {
+                display: block;
+                color: #8F8F8F;
+            }
+        .castList .castDescriptionColumn {}
+        .castList .castByColumn {
+            width: 170px;
+            text-align: right;
+            font-size: .8em;
+            text-transform: lowercase;
+        }
+            .castList .castByColumn span {
+                display: block;
+            }
+            .castList .castByLine {}
+                .castList .castByLine strong {
+                    text-transform: capitalize;
+                }
+            .castList .castCreated {
+                font-weight: bold;
+            }
+            .castList .castDuration {}
+
+/* Admin Pages */
+
+.admin, .index.admin, .admin.settings.index {
+    background: transparent;
+    padding: 0;
+    margin-top: 20px;
+}
+    .admin h2, .casts.admin h2 {
+        color: #8F8F8F;
+        font-size: 150%;
+        font-weight: bold;
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 34px;
+        line-height: 38px;
+        text-transform: lowercase;
+        margin-bottom: 0;
+        padding-left: 38px;
+        border-bottom: 0;
+    }
+        .admin.casts.view h2 {
+            background: transparent;
+            padding-left: 0;
+            text-transform: none;
+        }
+        .admin.casts h2 {
+            background: url('../img/layout/bgH2Podcasts.png') no-repeat left;
+        }
+        .admin.users h2 {
+            background: url('../img/layout/bgH2Users.png') no-repeat left;
+        }
+        .admin.settings h2 {
+            background: url('../img/layout/bgH2Settings.png') no-repeat left;
+            margin-bottom: 15px;
+            height: 36px;
+            line-height: 40px;
+        }
+
+    .admin th {
+        text-align: left;
+        background: url(../img/layout/bgNavBar.png) repeat-x top;
+        color: #fff;
+        border-color: #fff #3c3c3c #fff #7d7d7d;
+        border-style: solid;
+        border-width: 0 1px;
+        text-transform: lowercase;
+    }
+        .admin th a {
+            color: #fff;
+            background: transparent;
+            padding: 5px;
+        }
+        .admin th.actions {
+            width: 150px;
+        }
+    .admin .selected {
+        text-decoration: none;
+        background: url('../img/layout/bgNavBarLinkHover.png') no-repeat right;
+        border: 0;
+    }
+        .admin .asc a {
+            background: transparent url('../img/layout/bgAsc.png') no-repeat right;
+        }
+        .admin .desc a {
+            background: transparent url('../img/layout/bgDesc.png') no-repeat right;
+        }
+    .admin .deleteLink, .admin .editLink, .admin .infoLink {
+        text-decoration: none;
+        color: #9F9F9F;
+        font-size: .8em;
+        padding-left: 12px;
+        margin: 0 7px 0 0;
+    }
+        .admin .infoLink {
+            background: url('../img/layout/bgInfoLink.png') no-repeat left;
+        }
+        .admin .editLink {
+            background: url('../img/layout/bgEditLink.png') no-repeat left;
+        }
+        .admin .deleteLink {
+            background: url('../img/layout/bgDeleteLink.png') no-repeat left;
+            margin-right: 0;
+        }
+
+/* Admin Forms */
+
+.form.admin {}
+    .form.admin .formTitle {
+        margin-top: 10px;
+        background: url('../img/layout/bgFormTitle.png') repeat-x;
+        color: #fff;
+        font-size: 110%;
+        padding: 0 0 0 10px;
+        height: 20px;
+        line-height: 20px;
+        text-transform: lowercase;
+        width: 442px;
+    }
+    .form.admin fieldset {
+        margin: 0;
+        border-top: 0;
+        width: 450px;
+        padding: 0;
+    }
+        .form.admin fieldset fieldset, .settings.admin.form fieldset fieldset {
+            width: 400px;
+            border: 0;
+        }
+            .form.admin fieldset fieldset legend {
+                color: #444444;
+                font-weight: bold;
+            }
+        .form.admin fieldset form {
+            width: 96%;
+            padding: 2%;
+            margin: 0;
+        }
+            .form.admin fieldset form div {
+                padding: 0;
+            }
+        .form.admin label {
+            font-weight: bold;
+        }
+        .form.admin input {
+            font-size: 100%;
+        }
+        .form.admin .input.text input, .form.admin .input.password input, .form.admin .input textarea {
+            border: 1px solid #959595;
+            width: 98%;
+            font-size: 100%;
+        }
+        .form.admin .submit {
+            margin: 5px 0 35px;
+            width: 446px;
+            text-align: right;
+        }
+            .form.admin .submit input {
+                background: url('../img/layout/bgSubmitButton.png') repeat-x;
+                border: 0;
+                text-transform: lowercase;
+                color: #fff;
+                font-weight: bold;
+            }
+                .form.admin .submit input[disabled="disabled"] {
+                    background: url('../img/layout/bgSubmitDisabled.png') repeat-x;
+                    color: #A9A9A9;
+                }
+
+/* Settings Form */
+.settings.admin.form {}
+    .settings.admin.form form {
+        width: 100%;
+        margin: 0;
+    }
+        .settings.admin.form h3 {
+            width: 726px;
+        }
+        .settings.admin.form fieldset {
+            width: 734px;
+            overflow: auto;
+        }
+            .settings.admin.form div#mainForm {
+                float: left;
+                width: 400px;
+                clear: left;
+            }
+            .settings.admin.form h4 {
+                background: url('../img/layout/bgFormTitle.png') repeat-x;
+                color: #fff;
+                font-size: 110%;
+                padding: 0 0 0 10px;
+                margin-top: 10px;
+                height: 20px;
+                line-height: 20px;
+                text-transform: lowercase;
+                width: 304px;
+                float: left;
+                clear: right;
+                font-weight: bold;
+            }
+            .settings.admin.form .input.radio {
+                width: 300px;
+                border: 1px solid #CCCCCC;
+                border-top: 0;
+                overflow: auto;
+                padding: .8em .5em .5em; 
+            }
+                .settings.admin.form .radio label, .settings.admin.form .radio input {
+                    float: left;
+                    clear: none;
+                    margin-bottom: 0;
+                }
+                .settings.admin.form .radio label {
+                    margin-left: 4px;
+                }
+                .settings.admin.form .radio input {
+                    margin-left: 30px;
+                }
+            .settings.admin.form div#categoriesDiv {
+                border: 1px solid #CCCCCC;
+                width: 300px;
+                float: left;
+                clear: right;
+                font-size: .8em;
+            }
+                .settings.admin.form #categoriesDiv li.category {
+                    display: block;
+                    margin: 0;
+                }
+                    .settings.admin.form li.category .input.checkbox {
+                        margin: 5px 0;
+                    }
+                    .settings.admin.form li ul {
+                        overflow: auto;
+                        margin: 0 0 10px 15px;
+                    }
+                    .settings.admin.form #categoriesDiv li li {
+                        list-style: none;
+                        float: left;
+                        clear: none;
+                        width: 50%;
+                        margin: 2px 0;
+                    }
+                        .settings.admin.form #categoriesDiv li li div {
+                            padding: 0;
+                            margin: 0;
+                        }
+                            .settings.admin.form #categoriesDiv li li label, .settings.admin.form #categoriesDiv li li input {
+                                font-weight: normal;
+                                margin-bottom: 0;
+                                font-size: .9em;
+                            }
+                            .settings.admin.form #categoriesDiv li li label {
+                                font-weight: normal;
+                                margin-bottom: 0;
+                                margin-left: 35px;
+                                text-indent: -15px;
+                                padding: 0;
+                            }
+
+/* Cast View Page */
+
+.casts.view {
+    padding: 25px 0;
+}
+    .viewByInfo {
+        background: url('../img/layout/bgCastsView.png') no-repeat top left;
+        float: left;
+        width: 140px;
+        padding: 160px 10px 0;
+        margin-left: 10px;
+        font-size: .8em;
+        text-transform: lowercase;
+    }
+        .casts.admin.view .viewByInfo {
+            background: url('../img/layout/bgCastsAdminView.png') no-repeat top left;
+        }
+        .viewByInfo .castByLine strong {
+            text-transform: capitalize;
+        }
+        .viewByInfo .castCreated {
+            font-weight: bold;
+        }
+    .castBox {
+        float: right;
+        width: 535px;
+        margin-right: 25px;
+    }
+        .castBox .downloadLink {
+            background: url('../img/layout/bgDownloadLink.png') no-repeat left;
+            display: block;
+            padding-left: 15px;
+            margin: 5px 0 10px;
+            text-decoration: none;
+        }
+    .castBox .castKeywords {
+        margin: 25px 0;
+    }
+
+/* Cast Setting Index */
+
+.settings.index {
+    padding: 25px 0;
+    overflow: auto;
+}
+    .settings.index .settingImage {
+        width: 160px;
+        margin-left: 10px;
+        background: #595959;
+        color: #fff;
+        float: left;
+        padding-bottom: 25px;
+    }
+        .settingImage a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        .settingImage #imageDiv {
+            background: #fff;
+            border-color: #BFBFBF;
+            border-style: solid;
+            border-width: 1px 1px 0 1px;
+            padding: 10px 5px;
+            text-align: center;
+        }
+            .settingImage #imageDiv img {}
+        .settingImage h4 {
+            color: #fff;
+            text-transform: lowercase;
+            font-weight: bold;
+            padding: 0 10px;
+            margin: 15px 0 0;
+            font-size: 1.1em;
+        }
+        .settingImage span {
+            display: block;
+            padding: 0 10px;
+            font-size: .9em;
+        }
+    .settings.index .settingInfo {
+        float: right;
+        width: 515px;
+        margin-right: 25px;
+    }
+        .settings.index span {
+            display: block;
+        }
+        .settings.index .settingTitle {
+            color: #676767;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .settings.index .settingSubtitle {
+            color: #9D9D9D;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .settings.index .settingSummary {
+            color: #9D9D9D;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .settings.index .settingDescription {}
+        .settings.index .settingCategories {
+            margin-top: 20px;
+        }
+            .settings.index .settingCategories h4 {
+                color: inherit;
+                font-size: 1.2em;
+                font-weight: bold;
+                text-transform: lowercase;
+                margin-bottom: 5px;
+            }
+
+/* Cast Archive Page */
+
+.casts.archive {
+    margin: 20px 0;
+    position: relative;
+}
+    .casts.archive h2 {
+        color: #5D5D5D;
+        font-size: 120%;
+        font-weight: bold;
+        background: url('../img/layout/bgH2button.png') no-repeat 10px top;
+        height: 29px;
+        line-height: 29px;
+        text-transform: lowercase;
+        margin-bottom: 0;
+        padding-left: 17px;
+        border-bottom: 3px solid #E8E8E8;
+    }
+    .archiveList {
+        background: transparent;
+        border: 0;
+        margin: 10px 0 0;
+        color: #676767;
+        font-size: .9em;
+    }
+        .archiveList tr td {
+            border-right: 0;
+            text-align: left;
+            padding: 7px;
+        }
+        .archiveList .castTitleColumn {}
+        .archiveList .castByColumn, .archiveList .castCreatedColumn, .archiveList .castDescriptionColumn {
+            font-size: .8em;
+            text-transform: lowercase;
+        }
+        .archiveList .castByColumn {
+            width: 185px;
+        }
+                .castList .castByColumn strong {
+                    text-transform: capitalize;
+                }
+        .archiveList .castCreatedColumn {
+            font-weight: bold;
+            width: 135px;
+        }
+        .archiveList .castDurationColumn {
+            width: 110px;
+        }
+
+/* Users Login */
+
+.users.login{}
+    .users.login fieldset {
+        width: 50%;
+        border: 0;
+    }
+        .users.login fieldset legend {
+            font-size: 140%;
+        }
+        .users.login .input {
+            clear: both;
+        }
+            .users.login label {
+                font-weight: bold;
+                float: left;
+                clear: left;
+                width: 70px;
+                height: 22px;
+                line-height: 22px;
+            }
+            .users.login .input input {
+                float: left;
+                clear: right;
+                width: 180px;
+                font-size: 100%;
+            }
+        .users.login .submit {
+            margin-left: 110px;
+            margin-top: 0;
+        }
+            .users.login .submit input {}
+
+/* Subscribing Link Stuff */
+
+#subscribeLink {
+    position: absolute;
+    top: 160px;
+    right: 0;
+    background: url(../img/layout/bgSubscribeLink.png) no-repeat left bottom;
+    padding-left: 15px;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: .9em;
+}
+.casts.archive #subscribeLink {
+    top: 15px;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent url('../img/overlay.png') repeat;
+    width: 100%;
+    height: 100%;
+}
+    #subscribeInformation {
+        position: fixed;
+        top: 145px;
+        left: 50%;
+        width: 600px;
+        margin-left: -300px;
+        padding: 10px;
+        -moz-border-radius: 10px;
+        background: white;
+        border: 2px solid #000;
+        text-align: center;
+    }
+    #x {
+        background: #000;
+        color: #fff;
+        width: 20px;
+        height:20px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        -moz-border-radius: 10px;
+        margin-top: -7px;
+        margin-right: -7px;
+    }
+
+.paging {
+    margin-top: 10px;
+}
+/* Upload Form */
+
+#uploadForm label {
+    float: left;
+    width: 100px;
+    margin: 3px;
+    clear: both;
+}
+
+#uploadForm input.text {
+    margin: 3px;
+    width: 180px;
+}
+
+.uploadProgress {
+    /*border: 1px solid black;*/
+    background: #EC940F url(../img/progress_bar.png);
+    height: 12px;
+    color: white;
+}
+.uploadProgressContainer {
+    border: 1px solid black !important;
+}
+
+.uploadCancel {
+    width: 24px;
+    height: 24px;
+    background: url(../img/stopit.png);
+    cursor: pointer;
+    display: none;
+}
+
+#uploadStatus {
+    padding: 3px;
+}
+
+.uploadProgressText {
+    text-align: center;
+}
+.noBorders, .noBorders tr, .noBorders td, .noBorders div {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
