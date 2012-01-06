@@ -3,6 +3,11 @@ class UsersController extends AppController {
 
 	var $name = 'Users';
 	var $helpers = array('Html', 'Form');
+
+	# Comment these lines once setup is complete or else.
+	// function beforeFilter() {
+	// 	$this->Auth->allow('*');
+	// }
     
     function admin_index() {
 		$this->User->recursive = 0;

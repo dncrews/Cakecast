@@ -37,7 +37,7 @@
  */
 
 /**
- * The full path to the directory which holds "app", WITHOUT a trailing DS.
+ * The full path to the directory which holds this app, WITHOUT a trailing DS.
  *
  */
 	if (!defined('ROOT')) {

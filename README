@@ -1,6 +1,34 @@
-This is the initial version of the Cakecast application. I built this a couple years back, when CakePHP 1.2 was the best version available. The files aren't found automatically, since this was originally set up on a webserver that I couldn't quite put things where I wanted them. The webroot/index.php will need to be set up to identify where the cake libs are, as well as the rest of the site, since I expect the webroot to be moved to the webroot and the rest to remain outside.
+This is the initial version of the Cakecast application. I built this a couple years back, when CakePHP 1.2
+was the best version available. I have existing plans to port this application to CakePHP 2, Django,
+and to Symfony.
 
 This application is currently built to run on CakePHP 1.2; the version I used while building was 1.2.3.8166.
 
-Be sure to create a Security.salt in config/core.php and setup your database information in config/database.php
-If you don't have the schema, you can find it in config/sql/schema.sql
+
+Setup instructions
+--------------------
+1) Unpackage / clone these files to a location outside of the webroot. This will help to keep files secure
+2) Clone CakePHP Version 1.2 from the GitHub repos. "git clone -b 1.2 https://github.com/cakephp/cakephp.git"
+	In future versions, this will be updated to CakePHP 2.
+3) Update webroot/index.php line 44 to the absolute path to this directory
+4) Update webroot/index.php line 58 to the absolute path of the CakePHP directory made in step 1.
+5) Create a symlink for the /webroot to a place within your actual webroot:
+	"ln -s app/webroot/ <path_to_webroot>/podcast" # puts it inside domain.com/podcast
+	"rm <path_to_webroot>; ln -s app/webroot/ <path_to_webroot>" # replaces webroot (note trailing slashes)
+
+6) Create a new database. Import the file config/sql/schema.sql
+7) Copy the file config/database.php.default to config/database.php and put in your new database connection info
+8) Generate a unique sha1 security hash "find ~/ | sha1sum"
+9) Create a file config/core.local.php, adding in the following lines, with your hash where specified:
+	<?php
+		Configure::write('Security.salt', 'PutYourHashHere');
+	?>
+# These next steps are done after the security hash to ensure that your hash is included in your users passwords
+10) Open controllers/users.php
+	Uncomment lines 8-10 and save.
+11) go to <domain>/admin/users/add
+	Fill out this form and submit to add your admin user. Be sure to check the "Admin" checkbox
+12) Open controllers/users.php
+	Comment lines 8-10 to prevent access to this page without authorization and save.
+13) Refreshing your browser page will request you now log in. Put in the information you created. 
+14) Setup is now complete. Enjoy.
