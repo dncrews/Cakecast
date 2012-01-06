@@ -10,3 +10,7 @@ Thumbs.db
 tmp/*
 config/database.php
 !empty
+
+# local config #
+################
+*.local.php
