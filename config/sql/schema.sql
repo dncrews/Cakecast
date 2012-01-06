@@ -7,10 +7,10 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pod_casts`
+-- Table structure for table `podcasts`
 --
 
-CREATE TABLE IF NOT EXISTS `pod_casts` (
+CREATE TABLE IF NOT EXISTS `casts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
   `title` varchar(255) COLLATE utf8_swedish_ci DEFAULT NULL,
@@ -28,10 +28,10 @@ CREATE TABLE IF NOT EXISTS `pod_casts` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pod_settings`
+-- Table structure for table `settings`
 --
 
-CREATE TABLE IF NOT EXISTS `pod_settings` (
+CREATE TABLE IF NOT EXISTS `settings` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(50) COLLATE utf8_swedish_ci NOT NULL DEFAULT '',
   `subtitle` text COLLATE utf8_swedish_ci NOT NULL,
@@ -52,10 +52,10 @@ CREATE TABLE IF NOT EXISTS `pod_settings` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pod_users`
+-- Table structure for table `users`
 --
 
-CREATE TABLE IF NOT EXISTS `pod_users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(255) COLLATE utf8_swedish_ci DEFAULT NULL,
   `password` varchar(255) COLLATE utf8_swedish_ci DEFAULT NULL,

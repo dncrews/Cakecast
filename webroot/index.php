@@ -41,21 +41,21 @@
  *
  */
 	if (!defined('ROOT')) {
-		define('ROOT', dirname(dirname(dirname(__FILE__))) . DS . 'database');
+		define('ROOT', dirname(dirname(dirname(__FILE__))));
 	}
 /**
  * The actual directory name for the "app".
  *
  */
 	if (!defined('APP_DIR')) {
-		define('APP_DIR', 'podcast');
+		define('APP_DIR', 'lib');
 	}
 /**
  * The absolute path to the "cake" directory, WITHOUT a trailing DS.
  *
  */
 	if (!defined('CAKE_CORE_INCLUDE_PATH')) {
-		define('CAKE_CORE_INCLUDE_PATH', ROOT);
+		define('CAKE_CORE_INCLUDE_PATH', '/data/vhosts/cakephp');
 	}
 
 /**
