@@ -19,10 +19,14 @@ Setup instructions
 6) Create a new database. Import the file config/sql/schema.sql
 7) Copy the file config/database.php.default to config/database.php and put in your new database connection info
 8) Generate a unique sha1 security hash "find ~/ | sha1sum"
+
+# This step is only done in a separate file during development. It is to avoid people committing their stuff
+	and overwriting the "clean" files.
 9) Create a file config/core.local.php, adding in the following lines, with your hash where specified:
 	<?php
 		Configure::write('Security.salt', 'PutYourHashHere');
 	?>
+
 # These next steps are done after the security hash to ensure that your hash is included in your users passwords
 10) Open controllers/users.php
 	Uncomment lines 8-10 and save.
